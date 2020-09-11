@@ -15,6 +15,68 @@ body {
   animation-delay: 1s;
   animation-timing-function: ease-in-out;
 }
+.box1 {
+  margin: auto;
+  background: white;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  animation-name: myanimation1;
+  animation-duration: 10s;
+  animation-iteration-count: 4;
+  animation-delay: 1s;
+  animation-timing-function: ease-in-out;
+  transition: ease 500ms;
+  transition-property: all;
+}
+.box3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+  min-height: 60vh;
+}
+.showcase {
+  position: relative;
+  animation-name: heading;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.contain {
+  position: relative;
+  animation-name: contents;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes contents {
+  0% {
+    left: -2000px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes heading {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+.contain {
+  max-width: ;
+}
+
+.box1:hover {
+  background: red;
+  transform: rotateY(180deg);
+}
 
 @keyframes myanimation {
   0% {
